@@ -125,7 +125,7 @@
     <section id="about" class="py-8 md:py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center space-y-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About One Chance Foundation</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 inline-flex items-center justify-center flex-wrap gap-1">About One Chance Foundation<span class="inline-flex items-center justify-center ml-1.5 align-middle shrink-0" title="Verified"><svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#00A0F0" d="M12.000,0.200 L12.753,0.518 L13.410,1.292 L13.969,2.101 L14.536,2.534 L15.244,2.443 L16.133,2.022 L17.089,1.680 L17.900,1.781 L18.393,2.432 L18.575,3.432 L18.655,4.412 L18.930,5.070 L19.588,5.345 L20.568,5.425 L21.568,5.607 L22.219,6.100 L22.320,6.911 L21.978,7.867 L21.557,8.756 L21.466,9.464 L21.899,10.031 L22.708,10.590 L23.482,11.247 L23.800,12.000 L23.482,12.753 L22.708,13.410 L21.899,13.969 L21.466,14.536 L21.557,15.244 L21.978,16.133 L22.320,17.089 L22.219,17.900 L21.568,18.393 L20.568,18.575 L19.588,18.655 L18.930,18.930 L18.655,19.588 L18.575,20.568 L18.393,21.568 L17.900,22.219 L17.089,22.320 L16.133,21.978 L15.244,21.557 L14.536,21.466 L13.969,21.899 L13.410,22.708 L12.753,23.482 L12.000,23.800 L11.247,23.482 L10.590,22.708 L10.031,21.899 L9.464,21.466 L8.756,21.557 L7.867,21.978 L6.911,22.320 L6.100,22.219 L5.607,21.568 L5.425,20.568 L5.345,19.588 L5.070,18.930 L4.412,18.655 L3.432,18.575 L2.432,18.393 L1.781,17.900 L1.680,17.089 L2.022,16.133 L2.443,15.244 L2.534,14.536 L2.101,13.969 L1.292,13.410 L0.518,12.753 L0.200,12.000 L0.518,11.247 L1.292,10.590 L2.101,10.031 L2.534,9.464 L2.443,8.756 L2.022,7.867 L1.680,6.911 L1.781,6.100 L2.432,5.607 L3.432,5.425 L4.412,5.345 L5.070,5.070 L5.345,4.412 L5.425,3.432 L5.607,2.432 L6.100,1.781 L6.911,1.680 L7.867,2.022 L8.756,2.443 L9.464,2.534 L10.031,2.101 L10.590,1.292 L11.247,0.518 Z"/><path d="M7 12.5l3.2 3.2 6.6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></h2>
                 <p class="text-lg text-gray-600 leading-relaxed">One Chance Foundation is a humanitarian organization dedicated to saving the lives of children and vulnerable people across Africa who are suffering from severe illnesses, life-threatening conditions, extreme poverty, and urgent medical needs. We provide emergency surgeries, treatments, hospital care, nutrition, and hope — one life at a time.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 pt-4 md:pt-8">
                     <div class="flex flex-col items-center gap-3 p-6">
@@ -196,20 +196,68 @@
                 </div>
             </div>
 
-            <div id="donate-box" class="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 shadow-xl border border-gray-200/80 sticky top-24">
-                <div class="mb-6">
-                    <h3 class="text-xl font-bold text-gray-900">Join our mission</h3>
-                    <p class="text-xs text-gray-400">Supporting: <span id="donate-box-cam-title" class="text-gray-700 font-semibold"></span></p>
-                </div>
+            <div id="donate-box" class="lg:col-span-5 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden sticky top-24">
+                <!-- Top accent bar -->
+                <div class="h-1.5 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500"></div>
 
-                <!-- PayPal Hosted Button -->
-                <div class="flex flex-col items-center justify-center py-4">
-                    <div id="paypal-container-C3EMDFSXZP8RS" class="w-full"></div>
-                </div>
+                <div class="p-6 md:p-7">
+                    <!-- Header -->
+                    <div class="flex items-start justify-between gap-3 mb-1">
+                        <div>
+                            <p class="text-[11px] font-bold uppercase tracking-wider text-blue-600 mb-1">Secure Donation</p>
+                            <h3 class="text-xl font-bold text-gray-900 leading-tight">Make a Difference Today</h3>
+                        </div>
+                        <span class="shrink-0 mt-1 inline-flex items-center gap-1 bg-blue-50 text-blue-700 text-[11px] font-semibold px-2.5 py-1 rounded-full border border-blue-100">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#00A0F0" d="M12.000,0.200 L12.753,0.518 L13.410,1.292 L13.969,2.101 L14.536,2.534 L15.244,2.443 L16.133,2.022 L17.089,1.680 L17.900,1.781 L18.393,2.432 L18.575,3.432 L18.655,4.412 L18.930,5.070 L19.588,5.345 L20.568,5.425 L21.568,5.607 L22.219,6.100 L22.320,6.911 L21.978,7.867 L21.557,8.756 L21.466,9.464 L21.899,10.031 L22.708,10.590 L23.482,11.247 L23.800,12.000 L23.482,12.753 L22.708,13.410 L21.899,13.969 L21.466,14.536 L21.557,15.244 L21.978,16.133 L22.320,17.089 L22.219,17.900 L21.568,18.393 L20.568,18.575 L19.588,18.655 L18.930,18.930 L18.655,19.588 L18.575,20.568 L18.393,21.568 L17.900,22.219 L17.089,22.320 L16.133,21.978 L15.244,21.557 L14.536,21.466 L13.969,21.899 L13.410,22.708 L12.753,23.482 L12.000,23.800 L11.247,23.482 L10.590,22.708 L10.031,21.899 L9.464,21.466 L8.756,21.557 L7.867,21.978 L6.911,22.320 L6.100,22.219 L5.607,21.568 L5.425,20.568 L5.345,19.588 L5.070,18.930 L4.412,18.655 L3.432,18.575 L2.432,18.393 L1.781,17.900 L1.680,17.089 L2.022,16.133 L2.443,15.244 L2.534,14.536 L2.101,13.969 L1.292,13.410 L0.518,12.753 L0.200,12.000 L0.518,11.247 L1.292,10.590 L2.101,10.031 L2.534,9.464 L2.443,8.756 L2.022,7.867 L1.680,6.911 L1.781,6.100 L2.432,5.607 L3.432,5.425 L4.412,5.345 L5.070,5.070 L5.345,4.412 L5.425,3.432 L5.607,2.432 L6.100,1.781 L6.911,1.680 L7.867,2.022 L8.756,2.443 L9.464,2.534 L10.031,2.101 L10.590,1.292 L11.247,0.518 Z"/><path d="M7 12.5l3.2 3.2 6.6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Verified
+                        </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-5">You are supporting: <span id="donate-box-cam-title" class="text-gray-800 font-semibold"></span></p>
 
-                <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-gray-400">
-                    <div class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-gray-400"></i><span>Secure PayPal</span></div>
-                    <div class="flex items-center gap-1.5"><i class="fa-solid fa-lock text-gray-400"></i><span>Encrypted</span></div>
+                    <!-- Impact note -->
+                    <div class="flex items-start gap-3 mb-5 p-3.5 rounded-xl bg-emerald-50 border border-emerald-100">
+                        <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-heart-pulse text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-emerald-800">93% goes directly to programs</p>
+                            <p class="text-xs text-emerald-700/80 mt-0.5">Only 7% covers essential operations &amp; transparency reporting.</p>
+                        </div>
+                    </div>
+
+                    <!-- PayPal -->
+                    <div class="rounded-2xl border border-gray-200 bg-white p-4 mb-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-semibold text-gray-600">Checkout with PayPal</span>
+                            <span class="flex items-center gap-1 text-[10px] text-gray-400">
+                                <i class="fa-solid fa-lock text-[10px]"></i> 256-bit SSL
+                            </span>
+                        </div>
+                        <div id="paypal-container-C3EMDFSXZP8RS" class="w-full"></div>
+                    </div>
+
+                    <!-- Credentials -->
+                    <div class="space-y-2.5 mb-4">
+                        <div class="flex items-center gap-2.5 text-xs text-gray-600">
+                            <i class="fa-solid fa-building text-gray-400 w-4 text-center"></i>
+                            <span><strong class="text-gray-800">One Chance Foundation</strong> · EIN 98-1889126</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 text-xs text-gray-600">
+                            <i class="fa-solid fa-circle-check text-blue-500 w-4 text-center"></i>
+                            <span>Registered humanitarian nonprofit organization</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 text-xs text-gray-600">
+                            <i class="fa-solid fa-receipt text-gray-400 w-4 text-center"></i>
+                            <span>Eligible for tax deduction where applicable</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom trust strip -->
+                    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 pt-4 border-t border-gray-100 text-[11px] text-gray-400">
+                        <span class="inline-flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> Secure payment</span>
+                        <span class="inline-flex items-center gap-1"><i class="fa-brands fa-paypal"></i> PayPal protected</span>
+                        <span class="inline-flex items-center gap-1"><i class="fa-solid fa-user-shield"></i> Privacy first</span>
+                    </div>
                 </div>
             </div>
 
@@ -289,7 +337,7 @@
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-10">
                 <span class="text-gray-400 font-bold text-xs uppercase tracking-widest bg-gray-500/10 px-4 py-1.5 rounded-full border border-gray-500/20">Transparency</span>
-                <h2 class="text-2xl md:text-3xl font-black tracking-tight mt-4 text-gray-900">How Every Dollar Is Used</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 text-center inline-flex items-center justify-center gap-1 w-full">How Every Dollar Is Used<span class="inline-flex items-center justify-center ml-1 align-middle shrink-0" title="Verified"><svg class="w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#00A0F0" d="M12.000,0.200 L12.753,0.518 L13.410,1.292 L13.969,2.101 L14.536,2.534 L15.244,2.443 L16.133,2.022 L17.089,1.680 L17.900,1.781 L18.393,2.432 L18.575,3.432 L18.655,4.412 L18.930,5.070 L19.588,5.345 L20.568,5.425 L21.568,5.607 L22.219,6.100 L22.320,6.911 L21.978,7.867 L21.557,8.756 L21.466,9.464 L21.899,10.031 L22.708,10.590 L23.482,11.247 L23.800,12.000 L23.482,12.753 L22.708,13.410 L21.899,13.969 L21.466,14.536 L21.557,15.244 L21.978,16.133 L22.320,17.089 L22.219,17.900 L21.568,18.393 L20.568,18.575 L19.588,18.655 L18.930,18.930 L18.655,19.588 L18.575,20.568 L18.393,21.568 L17.900,22.219 L17.089,22.320 L16.133,21.978 L15.244,21.557 L14.536,21.466 L13.969,21.899 L13.410,22.708 L12.753,23.482 L12.000,23.800 L11.247,23.482 L10.590,22.708 L10.031,21.899 L9.464,21.466 L8.756,21.557 L7.867,21.978 L6.911,22.320 L6.100,22.219 L5.607,21.568 L5.425,20.568 L5.345,19.588 L5.070,18.930 L4.412,18.655 L3.432,18.575 L2.432,18.393 L1.781,17.900 L1.680,17.089 L2.022,16.133 L2.443,15.244 L2.534,14.536 L2.101,13.969 L1.292,13.410 L0.518,12.753 L0.200,12.000 L0.518,11.247 L1.292,10.590 L2.101,10.031 L2.534,9.464 L2.443,8.756 L2.022,7.867 L1.680,6.911 L1.781,6.100 L2.432,5.607 L3.432,5.425 L4.412,5.345 L5.070,5.070 L5.345,4.412 L5.425,3.432 L5.607,2.432 L6.100,1.781 L6.911,1.680 L7.867,2.022 L8.756,2.443 L9.464,2.534 L10.031,2.101 L10.590,1.292 L11.247,0.518 Z"/><path d="M7 12.5l3.2 3.2 6.6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></h2>
                 <p class="text-gray-500 mt-2 text-sm md:text-base">We believe trust is built through openness. Here is our financial summary.</p>
             </div>
 
@@ -399,7 +447,7 @@
                 <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 py-6 border-t border-b border-gray-800 mb-8">
                     <div class="flex items-center gap-2 text-xs"><i class="fa-solid fa-shield-halved text-gray-400"></i><span>Payments via PayPal & Stripe</span></div>
                     <div class="flex items-center gap-2 text-xs"><i class="fa-solid fa-lock text-gray-400"></i><span>Protected Checkout</span></div>
-                    <div class="flex items-center gap-2 text-xs"><i class="fa-solid fa-hand-holding-heart text-gray-400"></i><span>Verified Humanitarian Organization</span></div>
+                    <div class="flex items-center gap-2 text-xs"><i class="fa-solid fa-hand-holding-heart text-gray-400"></i><span class="inline-flex items-center">Verified Humanitarian Organization<span class="inline-flex items-center justify-center ml-1 align-middle shrink-0" title="Verified"><svg class="w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#00A0F0" d="M12.000,0.200 L12.753,0.518 L13.410,1.292 L13.969,2.101 L14.536,2.534 L15.244,2.443 L16.133,2.022 L17.089,1.680 L17.900,1.781 L18.393,2.432 L18.575,3.432 L18.655,4.412 L18.930,5.070 L19.588,5.345 L20.568,5.425 L21.568,5.607 L22.219,6.100 L22.320,6.911 L21.978,7.867 L21.557,8.756 L21.466,9.464 L21.899,10.031 L22.708,10.590 L23.482,11.247 L23.800,12.000 L23.482,12.753 L22.708,13.410 L21.899,13.969 L21.466,14.536 L21.557,15.244 L21.978,16.133 L22.320,17.089 L22.219,17.900 L21.568,18.393 L20.568,18.575 L19.588,18.655 L18.930,18.930 L18.655,19.588 L18.575,20.568 L18.393,21.568 L17.900,22.219 L17.089,22.320 L16.133,21.978 L15.244,21.557 L14.536,21.466 L13.969,21.899 L13.410,22.708 L12.753,23.482 L12.000,23.800 L11.247,23.482 L10.590,22.708 L10.031,21.899 L9.464,21.466 L8.756,21.557 L7.867,21.978 L6.911,22.320 L6.100,22.219 L5.607,21.568 L5.425,20.568 L5.345,19.588 L5.070,18.930 L4.412,18.655 L3.432,18.575 L2.432,18.393 L1.781,17.900 L1.680,17.089 L2.022,16.133 L2.443,15.244 L2.534,14.536 L2.101,13.969 L1.292,13.410 L0.518,12.753 L0.200,12.000 L0.518,11.247 L1.292,10.590 L2.101,10.031 L2.534,9.464 L2.443,8.756 L2.022,7.867 L1.680,6.911 L1.781,6.100 L2.432,5.607 L3.432,5.425 L4.412,5.345 L5.070,5.070 L5.345,4.412 L5.425,3.432 L5.607,2.432 L6.100,1.781 L6.911,1.680 L7.867,2.022 L8.756,2.443 L9.464,2.534 L10.031,2.101 L10.590,1.292 L11.247,0.518 Z"/><path d="M7 12.5l3.2 3.2 6.6-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></div>
                 </div>
                 <div class="text-center">
                     <p class="text-gray-600 text-xs">© 2026 One Chance Foundation. All rights reserved.</p>
