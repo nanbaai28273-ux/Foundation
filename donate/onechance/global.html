@@ -43,13 +43,27 @@ src="https://www.facebook.com/tr?id=1108887485436896&ev=PageView&noscript=1"
         /* Donation notification toast */
         #donation-toasts {
             position: fixed;
-            left: 20px;
-            bottom: 24px;
+            left: 12px;
+            bottom: 16px;
             z-index: 9999;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             pointer-events: none;
+            max-width: calc(100vw - 24px);
+        }
+        @media (max-width: 640px) {
+            #donation-toasts {
+                left: 8px;
+                right: 8px;
+                bottom: 12px;
+                max-width: none;
+            }
+            .donation-toast {
+                min-width: 0 !important;
+                max-width: 100% !important;
+                width: 100%;
+            }
         }
         .donation-toast {
             background: white;
@@ -59,7 +73,7 @@ src="https://www.facebook.com/tr?id=1108887485436896&ev=PageView&noscript=1"
             display: flex;
             align-items: center;
             gap: 12px;
-            min-width: 260px;
+            min-width: 240px;
             max-width: 300px;
             opacity: 0;
             transform: translateX(-40px) scale(0.95);
@@ -243,7 +257,7 @@ src="https://www.facebook.com/tr?id=1108887485436896&ev=PageView&noscript=1"
         </div>
     </main>
 
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 pb-16">
         <div class="mb-8">
             <p class="text-[11px] font-bold uppercase tracking-widest text-blue-600 mb-2">Nepal Flood Relief</p>
             <h2 class="text-3xl md:text-4xl font-black text-gray-900 leading-tight">
